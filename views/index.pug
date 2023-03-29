@@ -1,0 +1,15 @@
+extends layout
+
+block head-links
+  link(rel="stylesheet" type="text/css" href="/xterm/dist/xterm.css")
+  link(rel="stylesheet" type="text/css" href="/xterm/dist/addons/fullscreen/fullscreen.css")
+
+block head-scripts
+  script(src='/socket.io/socket.io.js')
+  script(src='/xterm/dist/xterm.js')
+  script(src='/xterm/dist/addons/fullscreen/fullscreen.js')
+
+block content
+  #terminal
+
+  script(src='/javascripts/application.js')
